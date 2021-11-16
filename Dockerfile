@@ -5,6 +5,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page271/fo
 WORKDIR /var/www/html
 RUN unzip foxclore.zip
 RUN cp -rvf foxclore/* .
-RUN rm -rf foxclore foxclore.zi
+RUN rm -rf foxclore foxclore.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
